@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# 🧩 Kanban Board - React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um aplicativo de **quadro Kanban** desenvolvido com **React**, **TypeScript** e **JSON Server**. Ideal para organizar tarefas de forma visual e prática, com suporte a múltiplas colunas e arrastar e soltar tarefas.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React
+- 🧠 TypeScript
+- 📦 PropTypes
+- 📡 JSON Server (fake API)
+- 💅 Radix UI
+- 🔄 Fetch para requisições
 
-## Expanding the ESLint configuration
+## 📋 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Criar, editar e excluir tarefas
+- Organizar tarefas por colunas (Ex: "A Fazer", "Em Progresso", "Concluído")
+- Simulação de backend com JSON Server
+- Tipagem estática com TypeScript e validação em tempo de execução com PropTypes
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+## ⚙️ Como Executar
+
+### 1. Clone o repositório
+
+```bash
+git clone git@github.com:RaulMigliari/react-kanban.git
+cd react-kanban
+```
+### 2. Instale as dependências
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3. Inicie o JSON Server
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+  npx json-server --watch db.json --port 3001
 ```
+
+### 4. Rode o projeto React
+
+```bash
+  npm run dev
+```
+
+## 👨‍💻 Desenvolvedor
+
+<table>
+  <tr>
+    <td width="120">
+      <img src="https://github.com/RaulMigliari.png" width="100px" style="border-radius: 4rem;" alt="Foto de Raul Migliari">
+    </td>
+    <td>
+      <h3>Raul Migliari</h3>
+      <p>Estudante de Engenharia de Software | Desenvolvedor Full Stack</p>
+    </td>
+  </tr>
+</table>
+
+
