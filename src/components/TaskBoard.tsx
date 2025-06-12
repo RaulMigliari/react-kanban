@@ -5,7 +5,7 @@ import { useTasks } from "../hooks/useTasks"
 
 export const TaskBoard: React.FC = () => {
 
-    const {tasks} = useTasks()
+    const { tasks } = useTasks()
 
     const tasksTodo: Task[] = tasks.filter(task => task.status === "todo") ?? []
     const tasksInProgress: Task[] = tasks.filter(task => task.status === "doing") ?? []
